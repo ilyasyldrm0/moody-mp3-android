@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#5A19AA</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="acikGri">#4C4C4C</color>
+    <color name="gri1">#2C2C2C</color>
+    <color name="griKapali">#1C1C1C</color>
+    <color name="whiteTransparent">#cccccc</color>
+    <color name="kirmizi">#BD2828</color>
+    <color name="yesil">#288A21</color>
+    <color name="moodyTitle">#9D67EC</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="whiteTransparent2">#3BFFFFFF</color>
+    <color name="audiomodelTransparent">#50FFFFFF</color>
+</resources>

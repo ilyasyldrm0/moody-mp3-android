@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?attr/editTextColor">
+
+    <!--this creates the mask with the ripple effect-->
+    <item
+        android:id="@+id/mask" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/griKapali"/>
+        </shape>
+    </item>
+
+</ripple>

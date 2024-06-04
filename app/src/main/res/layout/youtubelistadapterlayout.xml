@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintforitemvideoyoutube"
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+    android:background="@color/whiteTransparent2">
+
+
+    <ImageView
+        android:id="@+id/thumbnailView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/contentviewbackground"
+        android:backgroundTint="@color/transparent"
+        android:contentDescription="@string/thumbnailContentDesc"
+        app:layout_constraintEnd_toStartOf="@+id/videoTitle2"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.17" />
+
+    <TextView
+        android:id="@+id/videoViewsText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="start"
+        android:text="@string/_1_000_000_izlenme"
+        android:textColor="@color/griKapali"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="@+id/thumbnailView2"
+        app:layout_constraintTop_toBottomOf="@+id/thumbnailView2"
+        app:layout_constraintWidth_percent="0.45" />
+
+    <TextView
+        android:id="@+id/videoViewSecondsText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="end"
+        android:text="@string/ornekSure"
+        android:textColor="@color/griKapali"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="@+id/videoTitle2"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/videoTitle2"
+        app:layout_constraintWidth_percent="0.22" />
+
+    <TextView
+        android:id="@+id/videoTitle2"
+        android:layout_width="267dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/deneme_text_video_ad_deneme_text"
+        android:textColor="@color/griKapali"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDownload"
+        app:layout_constraintHeight_percent="0.7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/thumbnailView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.65" />
+
+
+    <ImageButton
+        android:id="@+id/imageButtonDownload"
+        android:layout_width="41dp"
+        android:layout_height="94dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/download"
+        android:src="@android:drawable/stat_sys_download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.75"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/videoTitle2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.10"
+        app:tint="@color/griKapali" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

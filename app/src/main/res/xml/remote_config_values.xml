@@ -1,0 +1,35 @@
+<?xml version ="1.0" encoding ="utf-8"?>
+<defaultsMap>
+
+    <entry>
+        <key>ads_show_limit_seconds</key>
+        <value>780</value>
+    </entry>
+
+    <entry>
+        <key>force_bakim_ekrani</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>force_current_version</key>
+        <value>11</value>
+    </entry>
+
+    <entry>
+        <key>force_gereken_isim</key>
+        <value>empty</value>
+    </entry>
+
+    <entry>
+        <key>force_update_required</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>force_update_url</key>
+        <value>market://details?id=com.broondle.mp3calar</value>
+    </entry>
+
+
+</defaultsMap>

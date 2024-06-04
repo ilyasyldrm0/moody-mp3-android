@@ -1,0 +1,117 @@
+
+plugins {
+    id 'com.android.application'
+}
+
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
+android {
+
+    signingConfigs {
+        debug {
+            storeFile file('xxx')
+            storePassword 'Benimadimname123.'
+            keyAlias 'key0'
+            keyPassword 'Benimadimname123.'
+        }
+        release {
+            storeFile file('xxx')
+            storePassword 'Benimadimname123.'
+            keyAlias 'key0'
+            keyPassword 'Benimadimname123.'
+        }
+    }
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.broondle.mp3calar"
+        minSdk 24
+        targetSdk 33
+        versionCode 26
+        versionName "1.6.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        //keys
+        buildConfigField("String","HOST_ADRESS",apikeyProperties['HOST_ADRESS'])
+        buildConfigField("String","API_TOKEN_KEY",apikeyProperties['API_TOKEN_KEY'])
+        buildConfigField("String","SENTRY_DNS_KEY",apikeyProperties['SENTRY_DNS_KEY'])
+        signingConfig signingConfigs.release
+        proguardFiles getDefaultProguardFile('proguard-android.txt')
+        resourceConfigurations += []
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.broondle.mp3calar'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+dependencies {
+
+    //android
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation files('libs/unity-ads.aar')
+    implementation 'androidx.navigation:navigation-fragment:2.7.5'
+    implementation 'androidx.navigation:navigation-ui:2.7.5'
+
+    //sentry - for errors
+    implementation 'io.sentry:sentry-android:6.10.0'
+
+
+    //legacy lib
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+
+
+    //google billing
+
+
+    //revenuaCat
+    implementation 'com.revenuecat.purchases:purchases:7.0.0'
+
+    //gson for ObjectUtil
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    //notification player
+    implementation "androidx.media:media:1.6.0"
+
+
+    //youtube downloader
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:okhttp-tls:4.11.0'
+
+    //firebase
+
+    implementation platform('com.google.firebase:firebase-bom:32.4.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-appcheck-playintegrity'
+    implementation 'com.google.firebase:firebase-config'
+    implementation 'com.google.firebase:firebase-messaging'
+
+    //RXJAVA
+    implementation "io.reactivex.rxjava3:rxjava:3.1.6"
+
+
+}
