@@ -3,7 +3,6 @@ This is an Android application for playing MP3 files. It offers a user-friendly 
 
 ## Features
 - Play MP3 files
-- Manage playlists
 - Intuitive user interface
 - Background playback
 
