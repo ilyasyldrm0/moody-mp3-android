@@ -1,10 +1,8 @@
 # Moody Mp3 Android
 This is an Android application for playing MP3 files. It offers a user-friendly interface and robust performance.
 
-## Features
-- Play MP3 files
-- Intuitive user interface
-- Background playback
+## Description
+Mp3 player for android devices.
 
 ## Installation
 
